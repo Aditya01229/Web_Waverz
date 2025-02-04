@@ -18,4 +18,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/backgroundcomplete.jpg"); /* Adjust path based on your public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Ensures it remains fixed while scrolling */
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
