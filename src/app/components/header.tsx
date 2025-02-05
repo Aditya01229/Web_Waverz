@@ -44,7 +44,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       {isOpen && (
         <nav className="md:hidden bg-white border-t">
-          {["Home", "aboutus", "Services", "Projects", "contact"].map((item) => (
+          {["Home", "About Us", "Services", "Projects", "Contact"].map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
