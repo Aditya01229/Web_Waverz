@@ -3,6 +3,7 @@ import ButtonWithLogo from "./components/button-with-logo";
 import SkillSection from "./components/skills";
 import ContactUs from "./components/contact";
 import ProfileCard, { ProfileCardsContainer } from "./components/profilecard";
+import ProjectsMain from "./components/project";
 
 export default function Home() {
   return (
@@ -54,13 +55,14 @@ export default function Home() {
               Your go-to partner for creativity, strategy, and technology.
             </p>
             <div className="max-w-fit">
-              <ButtonWithLogo title="Schedule a Call" Icon={Phone} />
+              <ButtonWithLogo title="Schedule a Call" Icon={Phone} theme="black" />
             </div>
           </div>
         </div>
       </section>
       <SkillSection />
       <ContactUs/>
+      <ProjectsMain/>
     </>
   );
 }

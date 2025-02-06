@@ -34,7 +34,7 @@ export default function Header() {
               {item}
             </Link>
           ))}
-          <ButtonWithLogo title="Contact" Icon={ArrowRight}/>
+          <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black"/>
 
         </nav>
 
