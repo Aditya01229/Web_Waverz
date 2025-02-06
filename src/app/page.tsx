@@ -61,7 +61,6 @@ export default function Home() {
       </section>
       <SkillSection />
       <ContactUs/>
-      <ProfileCardsContainer/>
     </>
   );
 }
