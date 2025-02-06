@@ -1,12 +1,17 @@
+import { ArrowDown } from "lucide-react";
 import ProfileCard, { ProfileCardsContainer } from "./profilecard";
+import SectionHeading from "./section-heading";
 
 export default function ContactUs() {
   return (
+    
     <section id="about-us">
       {/* First section for titles */}
-      <div className="mt-24 text-center px-4 md:px-20 py-5">
+      <div className="mt-16 text-center px-4 md:px-20 py-4">
+        <div className="flex justify-end">
+      <SectionHeading title="Skills" Icon={ArrowDown} reqColor="black" /> </div>
         {/* "Trusted Partner For" */}
-        <h2 className="text-4xl md:text-7xl font-bold text-black">
+        <h2 className="text-4xl md:text-7xl font-bold text-black mt-10">
           We Have been{" "}
           <span className="bg-black text-white px-3 py-1 rounded-md">
             Developing

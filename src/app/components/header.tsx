@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="top-0 left-0 w-full z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-5 mt-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -39,14 +39,14 @@ export default function Header() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-black" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="md:hidden bg-white border-t">
+        <nav className="md:hidden">
           {["Home", "About Us", "Services", "Projects"].map((item) => (
             <Link
               key={item}
@@ -57,7 +57,7 @@ export default function Header() {
               {item}
             </Link>
           ))}
-          <ButtonWithLogo title="Tile" Icon={ArrowRight}/>
+          <ButtonWithLogo title="Contact" Icon={ArrowRight}/>
         </nav>
       )}
     </header>
