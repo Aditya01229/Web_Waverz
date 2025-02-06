@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import ProfileCard, { ProfileCardsContainer } from "./profilecard";
+import { ProfileCardsContainer } from "./profilecard";
 import SectionHeading from "./section-heading";
 
 export default function ContactUs() {
@@ -44,8 +44,8 @@ export default function ContactUs() {
           <div className="bg-black p-6 rounded-xl shadow-md w-full md:w-1/2 text-start">
             <h2 className="text-2xl font-bold text-white mb-4 smooch-sans-tag tracking-wider">WHO WE ARE</h2>
             <p className="text-md text-[#bebebe] text-wide">
-              "We are a team of passionate developers, designers, and strategists
-              committed to building exceptional digital experiences."
+              &quot;We are a team of passionate developers, designers, and strategists
+              committed to building exceptional digital experiences.&qout;
             </p>
           </div>
 
@@ -53,8 +53,8 @@ export default function ContactUs() {
           <div className="bg-black p-6 rounded-xl shadow-md w-full md:w-1/2 text-start">
             <h2 className="text-2xl font-bold text-white mb-4 smooch-sans-tag tracking-wider">OUR MISSION</h2>
             <p className="text-md text-[#bebebe] text-wide">
-              "Our mission is to empower businesses with cutting-edge technology,
-              delivering high-quality web solutions that drive success."
+            &qout;Our mission is to empower businesses with cutting-edge technology,
+              delivering high-quality web solutions that drive success.&qout;
             </p>
           </div>
         </div>

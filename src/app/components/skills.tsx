@@ -22,7 +22,7 @@ export default function SkillSection() {
   const skillsData = [
     {
       title: "HTML & CSS",
-      description: "Building the world's best marketing. Your trusted partner for strategy, design, and dev.",
+      description: "Building the world &apos;s best marketing. Your trusted partner for strategy, design, and dev.",
       logo: "./html-css-transparent.png",
     },
     {
@@ -56,7 +56,7 @@ export default function SkillSection() {
         </p>
         <div className="flex flex-col gap-7">
           <p className="tracking-[0.1em] text-[1.2rem] max-w-[500px]">
-            Building the world's best marketing. Your trusted partner for strategy, design, and dev.
+            Building the world&apos;s best marketing. Your trusted partner for strategy, design, and dev.
           </p>
           <hr />
           <div className="flex gap-5 justify-end">

@@ -2,7 +2,6 @@ import { Phone } from "lucide-react";
 import ButtonWithLogo from "./components/button-with-logo";
 import SkillSection from "./components/skills";
 import ContactUs from "./components/contact";
-import ProfileCard, { ProfileCardsContainer } from "./components/profilecard";
 import ProjectsMain from "./components/project";
 
 export default function Home() {

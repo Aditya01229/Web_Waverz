@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Eye, Code, Phone, Rocket } from "lucide-react";
+import { ArrowDown, ArrowRight, Phone, Rocket } from "lucide-react";
 import SectionHeading from "./section-heading";
 import ButtonWithLogo from "./button-with-logo";
 
@@ -20,7 +20,7 @@ export default function ProjectsMain() {
         {/* "Your Website Development" with styling */}
         <h1 className="text-4xl md:text-7xl font-bold mt-7">
           <span className="text-white">Projects </span>
-          <span className="bg-black text-white px-3 py-1 rounded-md">We've Done.</span>
+          <span className="bg-black text-white px-3 py-1 rounded-md">We&apos;ve Done.</span>
         </h1>
       </div>
 
