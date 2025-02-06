@@ -22,13 +22,13 @@ export default function Home() {
       </section>
 
       {/* Second section for email and icons */}
-      <section className="mt-16 px-4 md:px-20 py-5">
-        <div className="flex flex-col md:flex-row justify-between items-start">
+      <section className="mt-16 py-5">
+        <div className="flex flex-col md:flex-row justify-evenly items-start gap-10">
           {/* Left side for email and vertical icons */}
           <div className="flex items-center mb-4 md:mb-0">
             {/* Email text displayed vertically */}
             <div className="rotate-180 text-gray-700">
-              <span className="inline-block font-semibold rotate-90 text-lg md:text-xl">@waverz.com</span>
+              <span className=" inline-block font-semibold rotate-90 text-lg md:text-xl">@waverz.com</span>
             </div>
 
             {/* Vertical icons */}
@@ -43,7 +43,7 @@ export default function Home() {
                 <i className="fas fa-phone fa-2x"></i>
               </a>
               {/* Vertical line below the last logo */}
-              <div className="h-16 w-1 bg-gray-700"></div>
+              <div className="h-28 w-1 bg-gray-700"></div>
             </div>
           </div>
 

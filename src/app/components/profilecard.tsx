@@ -11,6 +11,7 @@ interface ProfileCardProps {
 
 export default function ProfileCard({ username, githubLink, linkedinLink, instagramLink,avatarImage }: ProfileCardProps) {
   return (
+    
     <div className="relative max-w-sm shadow-lg rounded-lg overflow-hidden">
       {/* Avatar Image */}
       <img
@@ -33,7 +34,7 @@ export default function ProfileCard({ username, githubLink, linkedinLink, instag
       </div>
 
       {/* Username in the right bottom corner */}
-      <div className="absolute bottom-1 right-4 p-2 text-black font-semibold">
+      <div className="absolute bottom-0 right-4 p-2 text-black font-semibold">
         {username}
       </div>
     </div>
@@ -42,7 +43,7 @@ export default function ProfileCard({ username, githubLink, linkedinLink, instag
 
 export function ProfileCardsContainer() {
   return (
-    <div className="flex justify-center space-x-20 mt-5"> {/* Spacing between the cards */}
+    <div className="flex justify-center space-x-20 mt-16"> {/* Spacing between the cards */}
       <ProfileCard 
         username="@Om" 
         githubLink="https://github.com/OM-PAGARIYA28" 

@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="top-0 left-0 w-full z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <Image
