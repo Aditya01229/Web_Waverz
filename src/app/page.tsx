@@ -1,6 +1,8 @@
 import { Phone } from "lucide-react";
 import ButtonWithLogo from "./components/button-with-logo";
 import SkillSection from "./components/skills";
+import ContactUs from "./components/contact";
+import ProfileCard, { ProfileCardsContainer } from "./components/profilecard";
 
 export default function Home() {
   return (
@@ -58,6 +60,8 @@ export default function Home() {
         </div>
       </section>
       <SkillSection />
+      <ContactUs/>
+      <ProfileCardsContainer/>
     </>
   );
 }
