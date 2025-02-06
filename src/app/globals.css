@@ -25,5 +25,5 @@ body {
   background-position: center;
   background-attachment: fixed; /* Ensures it remains fixed while scrolling */
   background-repeat: no-repeat;
-  min-height: 100vh;
+  box-sizing: border-box;
 }

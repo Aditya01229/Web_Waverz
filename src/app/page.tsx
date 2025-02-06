@@ -1,3 +1,7 @@
+import { Phone } from "lucide-react";
+import ButtonWithLogo from "./components/button-with-logo";
+import SkillSection from "./components/skills";
+
 export default function Home() {
   return (
     <>
@@ -42,14 +46,18 @@ export default function Home() {
           </div>
 
           {/* Right side for text */}
-          <div className="mr-0 md:mr-28">
-            <p className="text-lg md:text-2xl font-semibold text-gray-700">
+          <div className="mr-0 md:mr-28 flex flex-col gap-10">
+            <p className="text-lg md:text-2xl font-semibold text-black">
               Empowering brands through exceptional web design and development. <br />
               Your go-to partner for creativity, strategy, and technology.
             </p>
+            <div className="max-w-fit">
+              <ButtonWithLogo title="Schedule a Call" Icon={Phone} />
+            </div>
           </div>
         </div>
       </section>
+      <SkillSection />
     </>
   );
 }

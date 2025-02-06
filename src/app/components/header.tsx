@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Icons for mobile menu
+import { Menu, X, ArrowRight } from "lucide-react"; // Icons for mobile menu
+import ButtonWithLogo from "./button-with-logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
@@ -23,8 +24,8 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8 text-xl font-sans font-semibold ">
-          {["Home", "About Us", "Services", "Projects", "Contact"].map((item) => (
+        <nav className="hidden md:flex space-x-8 text-xl font-sans font-semibold items-center">
+          {["Home", "About Us", "Services", "Projects"].map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
@@ -33,6 +34,8 @@ export default function Header() {
               {item}
             </Link>
           ))}
+          <ButtonWithLogo title="Contact" Icon={ArrowRight}/>
+
         </nav>
 
         {/* Mobile Menu Button */}
@@ -44,7 +47,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       {isOpen && (
         <nav className="md:hidden bg-white border-t">
-          {["Home", "About Us", "Services", "Projects", "Contact"].map((item) => (
+          {["Home", "About Us", "Services", "Projects"].map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
@@ -54,6 +57,7 @@ export default function Header() {
               {item}
             </Link>
           ))}
+          <ButtonWithLogo title="Tile" Icon={ArrowRight}/>
         </nav>
       )}
     </header>
