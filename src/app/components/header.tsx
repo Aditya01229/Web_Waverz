@@ -11,15 +11,15 @@ export default function Header() {
 
   return (
     <header className="top-0 left-0 w-full z-50">
-      <div className="container mx-auto px-6 py-5 mt-2 flex justify-between items-center ">
+      <div className="container mx-auto px-3 xs:px-6 py-5 mt-2 flex justify-between items-center ">
         {/* Logo */}
         <Link href="/">
           <Image
             src="/logos.png" // Ensure this image is inside /public folder
             alt="Logo"
-            width={300}
+            width={250}
             height={200}
-            className="cursor-pointer"
+            className="cursor-pointer sm:w-80 xs:h-200"
           />
         </Link>
 
