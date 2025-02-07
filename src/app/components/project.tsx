@@ -12,15 +12,13 @@ export default function ProjectsMain() {
         </div>
 
         {/* "Trusted Partner For" */}
-        <h2 className="text-4xl md:text-7xl font-bold text-white mt-10">
-          Take a{" "}
-          <span className="bg-black text-white px-3 py-1 rounded-md">Look</span> at the latest
+        <h2 className="text-4xl md:text-5xl font-bold text-white mt-10">
+          Take a look at the latest
         </h2>
 
         {/* "Your Website Development" with styling */}
-        <h1 className="text-4xl md:text-7xl font-bold mt-7">
-          <span className="text-white">Projects </span>
-          <span className="bg-black text-white px-3 py-1 rounded-md">We&apos;ve Done.</span>
+        <h1 className="text-4xl md:text-5xl font-bold mt-3 text-white">
+          Projects we've done.
         </h1>
       </div>
 

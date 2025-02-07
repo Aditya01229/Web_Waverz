@@ -3,6 +3,7 @@ import ButtonWithLogo from "./components/button-with-logo";
 import SkillSection from "./components/skills";
 import ContactUs from "./components/contact";
 import ProjectsMain from "./components/project";
+import ServiceSection from "./components/services";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
       </section>
       <SkillSection />
       <ContactUs/>
+      <ServiceSection/>
       <ProjectsMain/>
     </>
   );
