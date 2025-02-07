@@ -18,7 +18,7 @@ export default function ProjectsMain() {
 
         {/* "Your Website Development" with styling */}
         <h1 className="text-4xl md:text-5xl font-bold mt-3 text-white">
-          Projects we've done.
+          Projects we&apos;ve done.
         </h1>
       </div>
 
