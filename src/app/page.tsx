@@ -60,9 +60,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <SkillSection />
-      <ContactUs/>
       <ServiceSection/>
+      <ContactUs/>
+      <SkillSection />
       <ProjectsMain/>
     </>
   );
