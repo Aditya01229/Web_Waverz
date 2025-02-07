@@ -42,7 +42,7 @@ export default function ProfileCard({ username, githubLink, linkedinLink, instag
 
 export function ProfileCardsContainer() {
   return (
-    <div className="flex justify-center space-x-20 mt-2">
+    <div className="flex justify-center px-3 space-x-5 lg:space-x-20 mt-2">
          {/* Spacing between the cards */}
       <ProfileCard 
         username="@OM" 

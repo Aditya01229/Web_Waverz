@@ -7,27 +7,27 @@ export default function ContactUs() {
     
     <section id="about-us">
       {/* First section for titles */}
-      <div className="mt-16 text-center px-4 md:px-20 py-4">
+      <div className="mt-16 text-center lg:px-4 md:px-1 py-4">
         <div className="flex justify-end">
       <SectionHeading title="Skills" Icon={ArrowDown} reqColor="black" /> </div>
         {/* "Trusted Partner For" */}
-        <h2 className="text-4xl md:text-7xl font-bold text-black mt-10">
+        <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold text-black mt-10 leading-snug md:leading-normal sm:leading-snug">
           We Have been{" "}
-          <span className="bg-black text-white px-3 py-1 rounded-md">
+          <span className="bg-black text-white px-3 py-1 rounded-md  leading-snug md:leading-normal sm:leading-snug">
             Developing
           </span>
         </h2>
 
         {/* "Your Website Development" with styling */}
-        <h1 className="text-4xl md:text-7xl font-bold mt-7">
-          <span className="text-black">Websites since </span>
-          <span className="bg-black text-white px-3 py-1 rounded-md">
+        <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold mt-3 lg:mt-7">
+          <span className="text-black ">Websites since </span>
+          <span className="bg-black text-white px-3 py-1 rounded-md leading-snug md:leading-normal sm:leading-snug">
             2023.
           </span>
         </h1>
       </div>
 
-      <div className="text-zinc-700 font-semibold text-center mt-5">
+      <div className="text-zinc-700 font-semibold text-center mt-5 px-5">
         <p className="text-lg">
           We start every new client interaction with an in-depth discovery
           process to understand your needs and goals.
