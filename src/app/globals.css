@@ -35,4 +35,5 @@ body {
   background-attachment: fixed; /* Ensures it remains fixed while scrolling */
   background-repeat: no-repeat;
   box-sizing: border-box;
+  color: white;
 }
