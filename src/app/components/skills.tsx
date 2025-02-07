@@ -51,11 +51,11 @@ export default function SkillSection() {
     <section id="why-choose-me" className="bg-black mt-16 mx-4 rounded-3xl py-[6rem] px-16">
       <SectionHeading title="Skills" Icon={ArrowDown} reqColor="white" />
       <div className="flex justify-between mt-5">
-        <p className="font-semibold text-7xl font-sans leading-[5rem] tracking-[0.03em]">
+        <p className="font-semibold text-7xl font-sans leading-[5rem] tracking-[0.03em] text-white">
           My Extensive <br /> List of Skills
         </p>
         <div className="flex flex-col gap-7">
-          <p className="tracking-[0.1em] text-[1.2rem] max-w-[500px]">
+          <p className="tracking-[0.1em] text-[1.2rem] max-w-[500px] text-white">
             Building the world&apos;s best marketing. Your trusted partner for strategy, design, and dev.
           </p>
           <hr />
