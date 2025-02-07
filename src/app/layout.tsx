@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Web Waverz",
   description: "Surf the future of the web",
+  // icons: "/favicon.png"
 };
 
 export default function RootLayout({
