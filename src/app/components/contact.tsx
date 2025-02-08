@@ -8,7 +8,7 @@ export default function ContactUs() {
     <section id="about-us">
       {/* First section for titles */}
       <div className="mt-16 text-center lg:px-4 md:px-1 py-4">
-        <div className="flex justify-end px-4">
+        <div className="flex justify-end pr-4 md:pr-8">
       <SectionHeading title="About" Icon={ArrowDown} reqColor="black" /> </div>
         {/* "Trusted Partner For" */}
         <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold text-black mt-10 md:leading-normal sm:leading-snug">
