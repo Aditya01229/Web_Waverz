@@ -8,8 +8,8 @@ export default function ContactUs() {
     <section id="about-us">
       {/* First section for titles */}
       <div className="mt-16 text-center lg:px-4 md:px-1 py-4">
-        <div className="flex justify-end">
-      <SectionHeading title="Skills" Icon={ArrowDown} reqColor="black" /> </div>
+        <div className="flex justify-end px-4">
+      <SectionHeading title="About" Icon={ArrowDown} reqColor="black" /> </div>
         {/* "Trusted Partner For" */}
         <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold text-black mt-10 leading-snug md:leading-normal sm:leading-snug">
           We Have been{" "}
@@ -45,7 +45,7 @@ export default function ContactUs() {
             <h2 className="text-2xl font-bold text-white mb-4 smooch-sans-tag tracking-wider">WHO WE ARE</h2>
             <p className="text-md text-[#bebebe] text-wide">
               &quot;We are a team of passionate developers, designers, and strategists
-              committed to building exceptional digital experiences.&qout;
+              committed to building exceptional digital experiences.&quot;
             </p>
           </div>
 
@@ -53,8 +53,8 @@ export default function ContactUs() {
           <div className="bg-black p-6 rounded-xl shadow-md w-full md:w-1/2 text-start">
             <h2 className="text-2xl font-bold text-white mb-4 smooch-sans-tag tracking-wider">OUR MISSION</h2>
             <p className="text-md text-[#bebebe] text-wide">
-            &qout;Our mission is to empower businesses with cutting-edge technology,
-              delivering high-quality web solutions that drive success.&qout;
+            &quot;Our mission is to empower businesses with cutting-edge technology,
+              delivering high-quality web solutions that drive success.&quot;
             </p>
           </div>
         </div>

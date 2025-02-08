@@ -28,38 +28,53 @@ export default function Header() {
           {["Home", "About Us", "Services", "Projects"].map((item) => (
             <Link
               key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
+              href={
+                item === "Home"
+                  ? "/"
+                  : `/${item.toLowerCase().replace(" ", "")}`
+              }
               className="text-gray-800 hover:text-blue-500 transition"
             >
               {item}
             </Link>
           ))}
-          <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black"/>
-
+          <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black" />
         </nav>
 
         {/* Mobile Menu Button */}
-        <button className="lg:hidden text-black" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="lg:hidden text-black"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <nav className="lg:hidden">
-          {["Home", "About Us", "Services", "Projects"].map((item) => (
-            <Link
-              key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
-              className="block px-6 py-4 text-gray-800 hover:bg-gray-100 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              {item}
-            </Link>
-          ))}
-          <ButtonWithLogo title="Contact" Icon={ArrowRight}/>
+      {/* Mobile Navigation with Animation */}
+      <div
+        className={`lg:hidden rounded-xl bg-black/20 overflow-hidden transition-all duration-500 ease-in-out 
+          ${isOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"}`}
+      >
+        <nav>
+          {["Home", "About Us", "Services", "Projects", "Contact"].map(
+            (item) => (
+              <Link
+                key={item}
+                href={
+                  item === "Home"
+                    ? "/"
+                    : `/${item.toLowerCase().replace(" ", "")}`
+                }
+                className="block px-6 py-4 text-black hover:bg-gray-100 transition font-semibold"
+                onClick={() => setIsOpen(false)}
+              >
+                {item}
+              </Link>
+            )
+          )}
+          {/* <ButtonWithLogo title="Contact" Icon={ArrowRight}/> */}
         </nav>
-      )}
+      </div>
     </header>
   );
 }
