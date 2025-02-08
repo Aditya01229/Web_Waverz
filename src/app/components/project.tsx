@@ -25,7 +25,7 @@ export default function ProjectsMain() {
       {/* Project Boxes */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12 mb-12">
         {/* First Project Box (Tilted Left) */}
-        <div className="relative transform -rotate-3 rounded-2xl shadow-lg w-full md:w-[40%] h-[300px] overflow-hidden">
+        <div className="relative transform rounded-2xl shadow-lg w-full md:w-[40%] h-[300px] overflow-hidden">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center "

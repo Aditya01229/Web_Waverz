@@ -11,7 +11,7 @@ interface ProfileCardProps {
 
 export default function ProfileCard({ username, githubLink, linkedinLink, instagramLink,avatarImage }: ProfileCardProps) {
   return (
-    <div className="relative max-w-sm bg-black/15 rounded-lg overflow-hidden">
+    <div className="relative max-w-sm bg-black/15 rounded-lg overflow-hidden pb-4 sm:pb-0">
       {/* Avatar Image */}
       <img
         src={avatarImage} 
@@ -20,20 +20,20 @@ export default function ProfileCard({ username, githubLink, linkedinLink, instag
       />
 
       {/* Social Icons */}
-      <div className="absolute bottom-2 left-4 flex space-x-2 p-2 rounded-3xl bg-black/40 bg-opacity-70">
+      <div className="absolute bottom-2 left-1 md:left-2 flex space-x-2 p-1 md:p-2 rounded-3xl bg-black/40 bg-opacity-70">
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github fa-lg text-white hover:text-black"></i>
+          <i className="fab fa-github text-sm md:text-lg text-white hover:text-black"></i>
         </a>
         <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin fa-lg text-white hover:text-black"></i>
+          <i className="fab fa-linkedin text-sm md:text-lg text-white hover:text-black"></i>
         </a>
         <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-instagram fa-lg text-white hover:text-black"></i>
+          <i className=" fab fa-instagram text-sm md:text-lg text-white hover:text-black"></i>
         </a>
       </div>
 
       {/* Username in the right bottom corner */}
-      <div className="absolute bottom-2 right-4 p-2 text-black smooch-sans-tag text-xl">
+      <div className="absolute bottom-0 md:bottom-2 right-0 md:right-2 p-2 text-black smooch-sans-tag text-xl">
         {username}
       </div>
     </div>

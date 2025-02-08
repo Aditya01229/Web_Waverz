@@ -11,7 +11,7 @@ export default function ContactUs() {
         <div className="flex justify-end px-4">
       <SectionHeading title="About" Icon={ArrowDown} reqColor="black" /> </div>
         {/* "Trusted Partner For" */}
-        <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold text-black mt-10 leading-snug md:leading-normal sm:leading-snug">
+        <h2 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-bold text-black mt-10 md:leading-normal sm:leading-snug">
           We Have been{" "}
           <span className="bg-black text-white px-3 py-1 rounded-md  leading-snug md:leading-normal sm:leading-snug">
             Developing

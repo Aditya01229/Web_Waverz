@@ -29,22 +29,22 @@ export default function Home() {
           <div className="flex items-center mb-4 md:mb-0">
             {/* Email text - hidden for screens below 660px */}
             <div className="rotate-180 text-gray-700 hidden sm:block">
-              <span className="inline-block font-semibold rotate-90 text-lg md:text-xl">@waverz.com</span>
+              <span className="inline-block font-semibold rotate-90 text-lg md:text-xl">@webwaverz.tech</span>
             </div>
 
             {/* Social Icons */}
             <div className="flex sm:flex-col flex-row items-center ml-2 sm:gap-4">
               <a href="https://www.linkedin.com" className="text-gray-700 hover:text-black mb-4 xs:mr-0 pr-5">
-                <i className="fab fa-linkedin fa-2x"></i>
+              <i className="fab fa-linkedin fa-2x"></i>
               </a>
               <a href="https://www.instagram.com" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
-              <a href="tel:+123456789" className="text-gray-700 hover:text-black mb-2 xs:mb-0">
+              <a href="tel:+123456789" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
                 <i className="fas fa-phone fa-2x"></i>
               </a>
               {/* Vertical line (Only on larger screens) */}
-              <div className="h-24 w-1 bg-gray-700 hidden sm:block"></div>
+              <div className="relative right-2.5 h-24 w-1 bg-gray-700 hidden sm:block"></div>
             </div>
           </div>
 

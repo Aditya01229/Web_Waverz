@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import NextButton from "./next-button";
 import PrevButton from "./prev-button";
 import SectionHeading from "./section-heading";
@@ -7,22 +7,12 @@ import { ArrowDown } from "lucide-react";
 import SkillSectionComponent from "./skill-component";
 
 export default function SkillSection() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (direction: string) => {
-    if (scrollRef.current) {
-      const scrollAmount = window.innerWidth / 3.3; // Ensure 3 components per page
-      scrollRef.current.scrollBy({
-        left: direction === "next" ? scrollAmount : -scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+  
 
   const skillsData = [
     {
       title: "HTML & CSS",
-      description: "Building the world &apos;s best marketing. Your trusted partner for strategy, design, and dev.",
+      description: "Building the world's best marketing. Your trusted partner for strategy, design, and dev.",
       logo: "./html-css-transparent.png",
     },
     {
@@ -47,12 +37,42 @@ export default function SkillSection() {
     },
   ];
 
+
+  const [width, setWidth] = useState<number>(0); // Set default value to 0
+  
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        setWidth(window.innerWidth); // Set width after component mounts
+  
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+  
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []);
+  
+    const componentCSS = {
+      width: width <= 900 ? "calc(100%)" : (width <= 1024) ? "calc(100%/2 - 1rem)" : "calc(100%/3 - 1rem)",
+    };
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = (direction: string) => {
+    if (scrollRef.current) {
+      const scrollAmount = (width <= 900) ? window.innerWidth / 1.13 : (width <= 1024) ? window.innerWidth / 2.15 : window.innerWidth / 3.3; // Ensure 3 components per page
+      scrollRef.current.scrollBy({
+        left: direction === "next" ? scrollAmount : -scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <section id="why-choose-me" className="bg-black mt-16 mx-4 rounded-3xl py-[6rem] px-16">
+    <section id="why-choose-me" className="bg-black mt-16 mx-4 rounded-3xl py-[3rem] md:py-[6rem] px-4 md:px-16">
       <SectionHeading title="Skills" Icon={ArrowDown} reqColor="white" />
-      <div className="flex justify-between mt-5">
-        <p className="font-semibold text-7xl font-sans leading-[5rem] tracking-[0.03em] text-white">
-          My Extensive <br /> List of Skills
+      <div className="flex justify-between mt-5 flex-col lg:flex-row gap-6">
+        <p className="font-semibold text-5xl md:text-7xl font-sans leading-[4rem] sm:tracking-[0.03em] tracking-0 text-white">
+          My Extensive List of Skills
         </p>
         <div className="flex flex-col gap-7">
           <p className="tracking-[0.1em] text-[1.2rem] max-w-[500px] text-white">
@@ -77,7 +97,7 @@ export default function SkillSection() {
           }}
         >
           {skillsData.map((skill, index) => (
-            <div key={index} className="flex-shrink-0" style={{ width: 'calc(100% / 3 - 1rem)' }}>
+            <div key={index} className="flex-shrink-0" style={componentCSS}>
               <SkillSectionComponent
                 logo={skill.logo}
                 title={skill.title}
