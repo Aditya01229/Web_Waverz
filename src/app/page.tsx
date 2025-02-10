@@ -1,11 +1,15 @@
+"use client";
 import { Phone } from "lucide-react";
 import ButtonWithLogo from "./components/button-with-logo";
 import SkillSection from "./components/skills";
 import ContactUs from "./components/contact";
 import ProjectsMain from "./components/project";
 import ServiceSection from "./components/services";
+import ContactForm from "./components/ContactForm";
+import { useState } from "react";
 
 export default function Home() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   return (
     <>
       {/* First section for titles */}
@@ -40,9 +44,13 @@ export default function Home() {
               <a href="https://www.instagram.com" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
-              <a href="tel:+123456789" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
-                <i className="fas fa-phone fa-2x"></i>
-              </a>
+              <button
+                 onClick={() => setIsContactOpen(true)}
+                 className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5"
+                >
+               <i className="fas fa-phone fa-2x"></i>
+              </button>
+
               {/* Vertical line (Only on larger screens) */}
               <div className="relative right-2.5 h-24 w-1 bg-gray-700 hidden sm:block"></div>
             </div>
@@ -55,8 +63,14 @@ export default function Home() {
               Your go-to partner for creativity, strategy, and technology.
             </p>
             <div className="max-w-fit">
-              <ButtonWithLogo title="Schedule a Call" Icon={Phone} theme="black" />
-            </div>
+            <ButtonWithLogo
+            title="Schedule a Call"
+            Icon={Phone}
+             theme="black"
+             onClick={() => setIsContactOpen(true)} // Add onClick handler here
+  />
+</div>
+
           </div>
         </div>
       </section>
@@ -64,6 +78,8 @@ export default function Home() {
       <ContactUs/>
       <SkillSection />
       <ProjectsMain/>
+      
+      {isContactOpen && <ContactForm onClose={() => setIsContactOpen(false)} />}
     </>
   );
 }

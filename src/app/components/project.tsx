@@ -1,8 +1,11 @@
 import { ArrowDown, ArrowRight, Phone, Rocket } from "lucide-react";
 import SectionHeading from "./section-heading";
 import ButtonWithLogo from "./button-with-logo";
+import { useState } from "react";
+import ContactForm from "./ContactForm";
 
 export default function ProjectsMain() {
+  const [isContactOpen, setIsContactOpen] = useState(false); // Contact form pop-up state
   return (
     <section id="project-main" className="bg-black mt-16 mx-4 rounded-3xl py-[3rem] px-16">
       {/* First section for titles */}
@@ -54,11 +57,12 @@ export default function ProjectsMain() {
           <ArrowRight className="absolute text-white w-12 h-12 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 hover:opacity-50" />
         </div>
       </div>
+      {isContactOpen && <ContactForm onClose={() => setIsContactOpen(false)} />}
 
       {/* Buttons Below */}
       <div className="flex justify-center gap-10">
-        <ButtonWithLogo title="Contact Us" Icon={Phone} theme="white" />
-        <ButtonWithLogo title="View All Projects" Icon={Rocket} theme="white"/>
+        <ButtonWithLogo title="Contact Us" Icon={Phone} theme="white" onClick={() => setIsContactOpen(true)}/>
+        <ButtonWithLogo title="View All Projects" Icon={Rocket} theme="white" onClick={() => setIsContactOpen(true)}/>
       </div>
     </section>
   );
