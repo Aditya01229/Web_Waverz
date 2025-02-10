@@ -4,6 +4,7 @@ import SkillSection from "./components/skills";
 import ContactUs from "./components/contact";
 import ProjectsMain from "./components/project";
 import ServiceSection from "./components/services";
+import Timeline from "./components/timeline";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
       <ServiceSection/>
       <ContactUs/>
       <SkillSection />
+      <Timeline />
       <ProjectsMain/>
     </>
   );
