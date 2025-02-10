@@ -8,36 +8,32 @@ import { useEffect, useState } from "react";
 export default function ServiceSection() {
   const data = [
     {
-      title: "Hello1",
-      paragraph:
-        "The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "Portfolio & Business Websites",
+      paragraph: "Sleek, professional, and optimized for branding with fast performance, responsive design, and SEO-friendly structure. Tailored to showcase your work effectively and leave a lasting impression.",
     },
     {
-      title: "Hello2",
-      paragraph:
-        "Artificial Intelligence is transforming industries, automating tasks, and enhancing human capabilities like never before.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "E-Commerce Development",
+      paragraph: "Secure payment integration (Razorpay, Stripe), product listings, cart, and order management for seamless shopping. Optimized for conversions, fast loading speeds, and smooth user experience.",
     },
     {
-      title: "Hello3",
-      paragraph:
-        "Adopting eco-friendly habits can significantly reduce our carbon footprint and preserve the planet for future generations.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "Web App Development",
+      paragraph: "Custom, scalable, and interactive applications with secure authentication and database-driven functionality. High performance, reliability, and seamless integration with third-party services and APIs.",
     },
     {
-      title: "Hello4",
-      paragraph:
-        "Innovations in quantum computing, biotech, and space exploration are shaping the future in unimaginable ways.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "WordPress Development",
+      paragraph: "Custom themes, plugins, and full-site optimization for performance, security, and user engagement. Mobile-friendly layouts, easy content management, and SEO-enhanced for better visibility.",
     },
     {
-      title: "Hello5",
-      paragraph:
-        "Adopting eco-friendly habits can significantly reduce our carbon footprint and preserve the planet for future generations.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "Web Hosting & Maintenance",
+      paragraph: "Reliable hosting on Vercel, Hostinger, AWS, or DigitalOcean with regular updates and security checks. Performance monitoring, backup management, and technical support for smooth operation.",
     },
     {
-      title: "Hello6",
-      paragraph:
-        "Innovations in quantum computing, biotech, and space exploration are shaping the future in unimaginable ways.The universe is vast and filled with mysteries waiting to be uncovered. Scientists continue to explore its endless wonders.",
+      title: "UI/UX Design & Prototyping",
+      paragraph: "Intuitive, user-friendly interfaces designed using Figma and Tailwind for seamless user experiences. Focused on accessibility, aesthetics, usability, and smooth navigation for all devices.",
     },
   ];
+  
+  
 
   const [width, setWidth] = useState<number>(0); // Set default value to 0
 
