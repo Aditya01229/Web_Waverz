@@ -41,10 +41,10 @@ export default function Home() {
 
             {/* Social Icons */}
             <div className="flex sm:flex-col flex-row items-center ml-2 sm:gap-4">
-              <a href="https://www.linkedin.com" className="text-gray-700 hover:text-black mb-4 xs:mr-0 pr-5">
+              <a href="https://www.linkedin.com/in/web-waverz-b12a3a34b/" className="text-gray-700 hover:text-black mb-4 xs:mr-0 pr-5">
               <i className="fab fa-linkedin fa-2x"></i>
               </a>
-              <a href="https://www.instagram.com" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
+              <a href="https://www.instagram.comhttps://www.instagram.com/webwaverz/" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
               <button
@@ -66,7 +66,7 @@ export default function Home() {
               Your go-to partner for creativity, strategy, and technology.
             </p>
             <div className="max-w-fit">
-            <ButtonWithLogo
+              <ButtonWithLogo
             title="Schedule a Call"
             Icon={Phone}
              theme="black"
