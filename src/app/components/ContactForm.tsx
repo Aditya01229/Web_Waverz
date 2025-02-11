@@ -42,7 +42,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ onClose }) => {
         {/* Title & Close Button */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold text-black text-center w-full">Get in Touch</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-black text-lg">&times;</button>
+
         </div>
 
         {/* Contact Form */}
