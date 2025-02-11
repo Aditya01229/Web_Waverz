@@ -12,28 +12,28 @@ export default function SkillSection() {
   const skillsData = [
     {
       title: "HTML & CSS",
-      description: "Building the world's best marketing. Your trusted partner for strategy, design, and dev.",
+      description: "Proficient in creating responsive and visually appealing web interfaces. Skilled in Flexbox, Grid, and modern CSS techniques.",
       logo: "./html-css-transparent.png",
     },
     {
       title: "JavaScript",
-      description: "Expert in modern JavaScript and frameworks like React, Svelte, and NestJS.",
-      logo: "./html-css-transparent.png",
-    },
-    {
-      title: "TypeScript",
-      description: "Strong proficiency in TypeScript for scalable and robust applications.",
-      logo: "./html-css-transparent.png",
+      description: "Expert in ES6+ JavaScript and TypeScript for scalable applications. Strong in async programming and modern frontend frameworks.",
+      logo: "./javascript.png",
     },
     {
       title: "React & Next.js",
-      description: "Building performant and SEO-friendly web applications with Next.js.",
-      logo: "./html-css-transparent.png",
+      description: "Experienced in building interactive and high-performance UIs. Skilled in state management, server components, and optimizations.",
+      logo: "./react.png",
     },
     {
       title: "Node.js & NestJS",
-      description: "Backend development with Node.js and NestJS, focusing on scalability.",
-      logo: "./html-css-transparent.png",
+      description: "Skilled in backend development with Node.js and NestJS for scalable applications. Experienced in RESTful APIs and microservices architecture.",
+      logo: "./node.png",
+    },
+    {
+      title: "Databases",
+      description: "Proficient in SQL and NoSQL databases like PostgreSQL, MySQL, and MongoDB. Strong in schema design, indexing, and performance optimization.",
+      logo: "./database.png",
     },
   ];
 
@@ -72,7 +72,7 @@ export default function SkillSection() {
       <SectionHeading title="Skills" Icon={ArrowDown} reqColor="white" />
       <div className="flex justify-between mt-5 flex-col lg:flex-row gap-6">
         <p className="font-semibold text-5xl md:text-7xl font-sans leading-[4rem] sm:tracking-[0.03em] tracking-0 text-white">
-          My Extensive List of Skills
+          Our Extensive List of Skills
         </p>
         <div className="flex flex-col gap-7">
           <p className="tracking-[0.1em] text-[1.2rem] max-w-[500px] text-white">

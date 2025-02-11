@@ -40,7 +40,7 @@ export default function TimelineCard({
           isLargeScreen ? "w-1/2" : "w-full"
         } text-start`}
       >
-        <h2 className="text-2xl font-bold text-white mb-4 smooch-sans-tag tracking-wider">
+        <h2 className="text-3xl font-semibold text-white mb-4 smooch-sans-tag tracking-wider">
           {title}
         </h2>
         <p className="text-md text-[#bebebe] text-wide">

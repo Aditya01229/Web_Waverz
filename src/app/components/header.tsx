@@ -33,7 +33,7 @@ export default function Header() {
               href={
                 item === "Home"
                   ? "/"
-                  : `/${item.toLowerCase().replace(" ", "")}`
+                  : item === "Services" ? "#services" : item === "About Us" ? "#about-us" : `/${item.toLowerCase().replace(" ", "")}`
               }
               className="text-gray-800 hover:text-blue-500 transition"
             >
@@ -67,7 +67,7 @@ export default function Header() {
               href={
                 item === "Home"
                   ? "/"
-                  : `/${item.toLowerCase().replace(" ", "")}`
+                  : item === "Services" ? "#services" : item === "About Us" ? "#about-us" : `/${item.toLowerCase().replace(" ", "")}`
               }
               className="block px-6 py-4 text-black hover:bg-gray-100 transition font-semibold"
               onClick={() => setIsOpen(false)}

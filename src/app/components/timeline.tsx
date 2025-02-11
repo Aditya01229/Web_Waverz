@@ -42,24 +42,24 @@ export default function Timeline() {
 
   const steps = [
     {
-      title: "Step 1: Initial Video",
+      title: "Understanding Your Needs",
       description:
-        "Film a 2-minute video on any topic you're passionate about. This video serves as the foundation for creating your digital twin.",
+        "We start with a quick discussion to understand your requirements and suggest improvements. This helps us align the project with your goals from the start.",
     },
     {
-      title: "Step 2: Digital Clone Creation",
+      title: "Gathering Ideas",
       description:
-        "We feed your video into our advanced AI algorithm, which analyzes your body, face, and voice to create an accurate virtual replica of you.",
+        "After our discussion, we research and provide design references to match your vision. This ensures clarity on the look and feel of your website.",
     },
     {
-      title: "Step 3: Content Strategy and Production",
+      title: "Designing & Feedback",
       description:
-        "We create custom scripts by conducting niche research and generating videos of you speaking on relevant subjects tailored for social media.",
+        "We create a design based on our research and share it with you for approval. Any necessary changes are made to ensure it meets your expectations.",
     },
     {
-      title: "Step 4: Deployment & Growth",
+      title: "Building & Delivery",
       description:
-        "Your AI-generated content is published strategically to maximize engagement and audience growth.",
+        "Once the design is finalized, we develop the website with a focus on quality and efficiency. Our priority is to deliver a high-performing website on time and within budget.",
     },
   ];
 
@@ -73,18 +73,18 @@ export default function Timeline() {
           {/* Background Line */}
           <div
             className={`absolute ${
-              isLargeScreen ? "left-1/2 h-[70%]" : "h-[73%]"
-            } top-[8rem] w-2 bg-black/40 -translate-x-1/2`}
+              isLargeScreen ? "left-1/2 h-[68%]" : "h-[70%]"
+            } top-[9rem] w-2 bg-black/40 -translate-x-1/2`}
           ></div>
 
           {/* Animated Darker Line with Max Height */}
           <div
             className={`absolute ${
               isLargeScreen ? "left-1/2" : "left-0"
-            } top-[8rem] w-2 bg-black/80 -translate-x-1/2`}
+            } top-[9rem] w-2 bg-black/80 -translate-x-1/2`}
             style={{
-              height: `${Math.min(scrollProgress, isLargeScreen ? 70 : 73)}%`, // Limit max height to 70%
-              maxHeight: `${Math.min(scrollProgress, isLargeScreen ? 70 : 73)}%`, // Dynamic maxHeight
+              height: `${Math.min(scrollProgress, isLargeScreen ? 68 : 70)}%`, // Limit max height to 70%
+              maxHeight: `${Math.min(scrollProgress, isLargeScreen ? 68 : 70)}%`, // Dynamic maxHeight
               boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.8)",
             }}
           ></div>

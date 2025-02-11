@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading";
 export default function ContactUs() {
   return (
     
-    <section id="about-us">
+    <section id="about-us" className="mt-[-14rem] md:mt-0 pt-[14rem] md:pt-0">
       {/* First section for titles */}
       <div className="mt-16 text-center lg:px-4 md:px-1 py-4">
         <div className="flex justify-end pr-4 md:pr-8">

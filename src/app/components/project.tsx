@@ -10,7 +10,7 @@ export default function ProjectsMain() {
   return (
     <section
       id="project-main"
-      className="bg-black mt-16 mx-4 rounded-3xl py-[3rem] px-16"
+      className="bg-black mt-16 mx-4 rounded-3xl py-[3rem] px-4 md:px-16"
     >
       {/* First section for titles */}
       <div className="text-center px-4 md:px-20 py-4">
@@ -40,7 +40,7 @@ export default function ProjectsMain() {
       </div>
 
       {/* Buttons Below */}
-      <div className="flex justify-center gap-10">
+      <div className="flex justify-center gap-6 md:gap-10">
         <ButtonWithLogo
           title="Contact Us"
           Icon={Phone}

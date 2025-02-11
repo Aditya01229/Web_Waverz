@@ -19,10 +19,10 @@ export default function ServiceComponent({title, description}: ServiceComponentP
                 <h3 className={`rounded-3xl p-1 px-6 font-semibold tracking-wide transition-colors duration-100 ${isHovered ? "bg-black text-white" : "bg-[#c9fff0] text-black"}`}>
                     {title}
                 </h3>
-                <div className={`flex gap-1 ${isHovered ? "text-black" : "text-white"}`}>
+                {/* <div className={`flex gap-1 ${isHovered ? "text-black" : "text-white"}`}>
                     <ArrowRight />
                     <a href="" className="underline">Read More</a>
-                </div>
+                </div> */}
             </div>
             <p className={`text-md text-wide ${isHovered ? "text-black" : "text-[#bebebe]"}`}>
                 {description}
