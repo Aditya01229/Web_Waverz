@@ -41,8 +41,8 @@ export default function Header() {
             </Link>
           ))}
           {/* Contact Button triggers pop-up */}
-          <button onClick={() => setIsContactOpen(true)}>
-            <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black" />
+          <button>
+            <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black" onClick={() => setIsContactOpen(true)} />
           </button>
         </nav>
 

@@ -57,13 +57,13 @@ export default function ProjectsMain() {
           <ArrowRight className="absolute text-white w-12 h-12 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 hover:opacity-50" />
         </div>
       </div>
-      {isContactOpen && <ContactForm onClose={() => setIsContactOpen(false)} />}
 
       {/* Buttons Below */}
       <div className="flex justify-center gap-10">
         <ButtonWithLogo title="Contact Us" Icon={Phone} theme="white" onClick={() => setIsContactOpen(true)}/>
-        <ButtonWithLogo title="View All Projects" Icon={Rocket} theme="white" onClick={() => setIsContactOpen(true)}/>
+        <ButtonWithLogo title="View All Projects" Icon={Rocket} theme="white"/>
       </div>
+      {isContactOpen && <ContactForm onClose={() => setIsContactOpen(false)} />}
     </section>
   );
 }
