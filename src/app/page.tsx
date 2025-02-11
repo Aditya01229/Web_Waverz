@@ -7,12 +7,22 @@ import ProjectsMain from "./components/project";
 import ServiceSection from "./components/services";
 
 import ContactForm from "./components/ContactForm";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Timeline from "./components/timeline";
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  // Automatically open the contact form after 4 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsContactOpen(true);
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup timeout on unmount
+  }, []);
+
   return (
     <>
       {/* First section for titles */}
@@ -42,16 +52,16 @@ export default function Home() {
             {/* Social Icons */}
             <div className="flex sm:flex-col flex-row items-center ml-2 sm:gap-4">
               <a href="https://www.linkedin.com/in/web-waverz-b12a3a34b/" className="text-gray-700 hover:text-black mb-4 xs:mr-0 pr-5">
-              <i className="fab fa-linkedin fa-2x"></i>
+                <i className="fab fa-linkedin fa-2x"></i>
               </a>
-              <a href="https://www.instagram.comhttps://www.instagram.com/webwaverz/" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
+              <a href="https://www.instagram.com/webwaverz/" className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
               <button
-                 onClick={() => setIsContactOpen(true)}
-                 className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5"
-                >
-               <i className="fas fa-phone fa-2x"></i>
+                onClick={() => setIsContactOpen(true)}
+                className="text-gray-700 hover:text-black mb-4 xs:mb-0 pr-5"
+              >
+                <i className="fas fa-phone fa-2x"></i>
               </button>
 
               {/* Vertical line (Only on larger screens) */}
@@ -62,27 +72,28 @@ export default function Home() {
           {/* Right side for text */}
           <div className="mr-0 md:mr-28 flex flex-col gap-10">
             <p className="text-lg md:text-2xl font-semibold text-black">
-            Transforming brands through exceptional web design and development. <br />
-            Where creativity, strategy, and technology come together for success.
+              Transforming brands through exceptional web design and development. <br />
+              Where creativity, strategy, and technology come together for success.
             </p>
             <div className="max-w-fit">
               <ButtonWithLogo
-            title="Schedule a Call"
-            Icon={Phone}
-             theme="black"
-             onClick={() => setIsContactOpen(true)} // Add onClick handler here
-  />
-</div>
-
+                title="Schedule a Call"
+                Icon={Phone}
+                theme="black"
+                onClick={() => setIsContactOpen(true)}
+              />
+            </div>
           </div>
         </div>
       </section>
-      <ServiceSection/>
-      <ContactUs/>
+
+      <ServiceSection />
+      <ContactUs />
       <SkillSection />
       <Timeline />
-      <ProjectsMain/>
-      
+      <ProjectsMain />
+
+      {/* Contact Form Popup */}
       {isContactOpen && <ContactForm onClose={() => setIsContactOpen(false)} />}
     </>
   );
