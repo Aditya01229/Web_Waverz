@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Phone, Rocket } from "lucide-react";
+import { ArrowDown, Phone, Rocket } from "lucide-react";
 import SectionHeading from "./section-heading";
 import ButtonWithLogo from "./button-with-logo";
 import { useState } from "react";
