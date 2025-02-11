@@ -62,8 +62,8 @@ export default function Home() {
           {/* Right side for text */}
           <div className="mr-0 md:mr-28 flex flex-col gap-10">
             <p className="text-lg md:text-2xl font-semibold text-black">
-              Empowering brands through exceptional web design and development. <br />
-              Your go-to partner for creativity, strategy, and technology.
+            Transforming brands through exceptional web design and development. <br />
+            Where creativity, strategy, and technology come together for success.
             </p>
             <div className="max-w-fit">
             <ButtonWithLogo

@@ -83,8 +83,8 @@ export default function Timeline() {
               isLargeScreen ? "left-1/2" : "left-0"
             } top-[8rem] w-2 bg-black/80 -translate-x-1/2`}
             style={{
-              height: `${Math.min(scrollProgress, 70)}%`, // Limit max height to 70%
-              maxHeight: "70%",
+              height: `${Math.min(scrollProgress, isLargeScreen ? 70 : 73)}%`, // Limit max height to 70%
+              maxHeight: `${Math.min(scrollProgress, isLargeScreen ? 70 : 73)}%`, // Dynamic maxHeight
               boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.8)",
             }}
           ></div>
