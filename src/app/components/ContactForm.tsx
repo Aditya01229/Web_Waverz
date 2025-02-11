@@ -166,14 +166,14 @@ const ContactUs: React.FC<ContactUsProps> = ({ onClose }) => {
             <div className="mt-2 flex flex-col gap-2">
               <a
                 href="tel:+919075571005"
-                className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                className="flex items-center gap-2 text-sky-500 hover:text-blue-600"
               >
                 <Phone size={16} className="text-green-600" />
                 <span className="font-medium">Aditya - 9075571005</span>
               </a>
               <a
                 href="tel:+917028228014"
-                className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                className="flex items-center gap-2 text-sky-500 hover:text-blue-600"
               >
                 <Phone size={16} className="text-green-600" />
                 <span className="font-medium">Om - 7028228014</span>
