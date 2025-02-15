@@ -1,15 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation"; // Import usePathname
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import ButtonWithLogo from "./button-with-logo";
-import ContactForm from "./ContactForm"; // Import the ContactForm pop-up
+import ContactForm from "./ContactForm";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
   const [isContactOpen, setIsContactOpen] = useState(false); // Contact form pop-up state
+  const pathname = usePathname(); // Get current route
+
+  // Hide "Services" and "About Us" on the "/projects" route
+  const shouldHideLinks = pathname === "/projects";
 
   return (
     <header className="top-0 left-0 w-full z-50">
@@ -27,19 +32,25 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8 text-xl font-sans font-semibold items-center">
-          {["Home", "About Us", "Services", "Projects"].map((item) => (
-            <Link
-              key={item}
-              href={
-                item === "Home"
-                  ? "/"
-                  : item === "Services" ? "#services" : item === "About Us" ? "#about-us" : `/${item.toLowerCase().replace(" ", "")}`
-              }
-              className="text-gray-800 hover:text-blue-500 transition"
-            >
-              {item}
-            </Link>
-          ))}
+          {["Home", "About Us", "Services", "Projects"]
+            .filter((item) => !shouldHideLinks || (item !== "Services" && item !== "About Us"))
+            .map((item) => (
+              <Link
+                key={item}
+                href={
+                  item === "Home"
+                    ? "/"
+                    : item === "Services"
+                      ? "#services"
+                      : item === "About Us"
+                        ? "#about-us"
+                        : `/${item.toLowerCase().replace(" ", "")}`
+                }
+                className="text-gray-800 hover:text-blue-500 transition"
+              >
+                {item}
+              </Link>
+            ))}
           {/* Contact Button triggers pop-up */}
           <button>
             <ButtonWithLogo title="Contact" Icon={ArrowRight} theme="black" onClick={() => setIsContactOpen(true)} />
@@ -47,10 +58,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden text-black"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="lg:hidden text-black" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -61,20 +69,26 @@ export default function Header() {
           ${isOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"}`}
       >
         <nav>
-          {["Home", "About Us", "Services", "Projects"].map((item) => (
-            <Link
-              key={item}
-              href={
-                item === "Home"
-                  ? "/"
-                  : item === "Services" ? "#services" : item === "About Us" ? "#about-us" : `/${item.toLowerCase().replace(" ", "")}`
-              }
-              className="block px-6 py-4 text-black hover:bg-gray-100 transition font-semibold"
-              onClick={() => setIsOpen(false)}
-            >
-              {item}
-            </Link>
-          ))}
+          {["Home", "About Us", "Services", "Projects"]
+            .filter((item) => !shouldHideLinks || (item !== "Services" && item !== "About Us"))
+            .map((item) => (
+              <Link
+                key={item}
+                href={
+                  item === "Home"
+                    ? "/"
+                    : item === "Services"
+                      ? "#services"
+                      : item === "About Us"
+                        ? "#about-us"
+                        : `/${item.toLowerCase().replace(" ", "")}`
+                }
+                className="block px-6 py-4 text-black hover:bg-gray-100 transition font-semibold"
+                onClick={() => setIsOpen(false)}
+              >
+                {item}
+              </Link>
+            ))}
           {/* Mobile Contact Button */}
           <button
             onClick={() => {
