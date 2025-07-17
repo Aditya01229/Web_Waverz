@@ -39,7 +39,7 @@ export default function Projects() {
   ]}
 />
 
-<ProjectCard
+{/* <ProjectCard
   title="Interior Design Portfolio"
   image="https://media.istockphoto.com/id/1388092850/photo/mock-up-poster-frame-in-modern-interior-background-with-sofa-and-accessories-in-the-room.jpg?s=612x612&w=0&k=20&c=hej2e-1VpBf3xggnXVZl0fmUOdJ2gweLrrB7NnGW8ws="
   link="https://id-group.vercel.app/"
@@ -48,13 +48,13 @@ export default function Projects() {
     "Developed a visually immersive portfolio showcasing modern interior designs.",
     "Implemented a responsive and minimalist UI for an elegant browsing experience."
   ]}
-/>
+/> */}
 
 
 <ProjectCard
   title="Business Portfolio Website"
   image="https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
-  link="https://www.adfyou.com"
+  link="https://aditya01229.github.io/adfyou/"
   stack="HTML, CSS, JavaScript"
   description={[
     "Crafted a professional, responsive portfolio website to enhance brand identity.",

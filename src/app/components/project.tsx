@@ -40,7 +40,8 @@ export default function ProjectsMain() {
       {/* Project Boxes */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12 mb-12">
         <ProjectComponent title="CA Portfolio Website" image="https://media.istockphoto.com/id/1453953453/photo/strategy-of-diversified-investment.jpg?s=612x612&w=0&k=20&c=GdKGA5EuK0QfKm76ExjkK64iPZLuTUOyIDQlXs-ZRQM=" link="https://ssoffice.in" />
-        <ProjectComponent title="Interior Design Portfolio" image="https://media.istockphoto.com/id/1388092850/photo/mock-up-poster-frame-in-modern-interior-background-with-sofa-and-accessories-in-the-room.jpg?s=612x612&w=0&k=20&c=hej2e-1VpBf3xggnXVZl0fmUOdJ2gweLrrB7NnGW8ws=" link="https://id-group.vercel.app/" />
+        <ProjectComponent title="Business Portfolio Website" image="https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" link="https://aditya01229.github.io/adfyou/" />
+        {/* <ProjectComponent title="Interior Design Portfolio" image="https://media.istockphoto.com/id/1388092850/photo/mock-up-poster-frame-in-modern-interior-background-with-sofa-and-accessories-in-the-room.jpg?s=612x612&w=0&k=20&c=hej2e-1VpBf3xggnXVZl0fmUOdJ2gweLrrB7NnGW8ws=" link="https://id-group.vercel.app/" /> */}
       </div>
 
       {/* Buttons Below */}
